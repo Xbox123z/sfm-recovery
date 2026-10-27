@@ -1,5 +1,18 @@
 # SFM Recovery
 
+
+## 🎮 Harborlight Courier · 独立发布包（2026-10-27）
+
+逆向恢复工程的完整运行产物，按平台分为两个 Release：
+
+| 平台 | 下载 | 大小 | SHA-256 |
+|---|---|---|---|
+| **Windows x64**（Mono，可读源码） | [release-windows-x64-2026-10-27](https://github.com/Xbox123z/sfm-recovery/releases/tag/release-windows-x64-2026-10-27) | 72,898,920 B | `d23bacb4…b067` |
+| **Android ARM64**（测试签名 APK） | [release-android-arm64-2026-10-27](https://github.com/Xbox123z/sfm-recovery/releases/tag/release-android-arm64-2026-10-27) | 96,655,966 B | `33e4498e…c735` |
+
+**验证边界**：两个包均**尚未完成真机启动/玩法验收**；APK 为 Godot 默认测试证书签名、仅 arm64-v8a；签名证书按要求暂不填充。详细交接文档见 [handoff-2026-10-27 tag](https://github.com/Xbox123z/sfm-recovery/tree/handoff-2026-10-27/docs/HarborlightCourier-Handoff)。
+
+
 ## 为什么做这个项目
 
 我不认为 AI 逆向会毁掉独立游戏。恰恰相反，正因为一款游戏足够优秀，才有人愿意花时间和钱继续研究它——光是逆向 SFM，我就已经花了数百美元，够买十几份原作。
