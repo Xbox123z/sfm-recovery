@@ -2,7 +2,7 @@
 
 本次网页交接目标为 `Xbox123z/sfm-recovery` 的 `handoff/harborlight-courier-2026-10-27` 分支下 `docs/HarborlightCourier-Handoff/` 目录，范围包括源码、平台包交接材料、项目历史/交接 Markdown、验收材料和验证记录。禁止使用 Release、PR、`main`、Git LFS 或外托管。
 
-当前远端仍为提交 `861a7ca2d96e39ac8ab0c5b705e7a958e9b3c0aa`（28 个文件）；`main` 仍为 `b240b61b438300ba4f3adcaae94b7140756949ea`。根目录 6 个文档尚未提交。原计划的 20MB Windows 4 片批量 Commit 明确失败；Android 5 片未尝试。
+源码与根目录文档已完成网页提交：快照 `6528f8a011d41eb6f7b138410f2958586fed9743` 含 34 个文件（source 28 + 根目录 6），已通过只读 Git fetch 回读，34/34 文件与当时本地交接副本逐字节一致，且改动仅限这个新目录。该验证后仅补记本文、接手指南和清单的最终状态；最新提交号以分支历史为准。默认分支仍是 `main`，其提交保持 `b240b61b438300ba4f3adcaae94b7140756949ea`。完整平台包和所有分片仍未上传；不能称为全部交付完成。
 
 ## 当前8MB逐片测试方案
 

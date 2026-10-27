@@ -76,6 +76,6 @@ Android APK 使用 Godot 默认测试证书签名，不是项目专属生产发�
 
 ## 上传清单和排除项
 
-`UPLOAD_MANIFEST.md` 说明最终仅补交 28 个 source 文件和 6 个根目录文档，共 34 个文件；23 个 8MB 分片列为本地待上传记录，不纳入本次远端目标。两个原包仅本地保留。没有上传凭据、token、用户私有数据、缓存或临时 build tree。原远端交接分支仍为 `861a7ca2d96e39ac8ab0c5b705e7a958e9b3c0aa`（28 文件），`main` 仍为 `b240b61b438300ba4f3adcaae94b7140756949ea`；根目录 6 文件尚未提交。
+`UPLOAD_MANIFEST.md` 记录已上传的 28 个 source 文件和 6 个根目录文档，共 34 个文件；23 个 8MB 分片全部待上传，两个原包仅本地保留，整项交付尚未全部完成。没有上传凭据、token、用户私有数据、缓存或临时 build tree。快照 `6528f8a011d41eb6f7b138410f2958586fed9743` 已只读回收并核对 34/34 文件逐字节一致，且仅新增批准的新目录；随后仅补记接手指南、网页状态与清单，最新提交以分支历史为准。默认分支 `main` 及其提交 `b240b61b438300ba4f3adcaae94b7140756949ea` 未变。
 
 没有单独上传 109 MB 的原始 Windows EXE（已包含在完整 ZIP 中）、解压后的 Windows runtime 目录（ZIP 内已有）、旧版 `HarborlightCourier-windows-x64.zip`（缺少后来补入的 README、许可证状态和第三方声明文件），也没有重复上传项目中其他过时产物。平台包使用公共分支普通路径分片，不使用 Git LFS、PR、Release 或默认分支提交。

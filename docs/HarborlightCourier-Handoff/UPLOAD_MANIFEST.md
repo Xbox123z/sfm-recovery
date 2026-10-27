@@ -6,11 +6,11 @@ Base documentation count, including this manifest: **34**. Table entries below: 
 
 | Path | Size (bytes) | SHA-256 |
 |---|---:|---|
-| `PROJECT_HANDOFF.md` | 9,709 | `8c9b146024203c9a0cb616b6cf6d97ae474f7599eebbd9fd7f6bb4374a00bcad` |
+| `PROJECT_HANDOFF.md` | 9,830 | `1c1ccddba7bb2d88da2eae988837c1e9b63b19787176dce44ba9a7c2b5227392` |
 | `README.md` | 2,113 | `e0a1999041670063cc646e435924f20d9cb2adde641da70c3548ba7a25b37172` |
 | `REASSEMBLE_ARTIFACTS.md` | 3,099 | `39350c6220209a2a543280231000861fdf98c485110f5b806572d6cc81b6b16c` |
 | `SHA256SUMS.txt` | 3,857 | `8031b26b1833d794f7bcdd75b1b8bfad93fb6ddaf8df8e4ab637b0ffcdbd0ff9` |
-| `WEB_UPLOAD_STATUS.md` | 2,596 | `a5b19c8a5d8a85158e99698b1d504c17d51e0a21d14fc012f1a913210efb60af` |
+| `WEB_UPLOAD_STATUS.md` | 2,874 | `c6e5297d573a47253dc4995a7c2d7a44135edfca6517e4c70f05d184d3fc85f5` |
 | `source/.gitignore` | 43 | `5e516eaf9bafbe4ad18fe28db343c155ae620f2bf4b24d17c9fc727f0f8a903d` |
 | `source/ACCEPTANCE_REPORT.md` | 6,049 | `e0fad33052af71e198e0c0f19a76e8fd79d3324ddfca5668979713ade79a81a6` |
 | `source/CourierGame.cs` | 36,874 | `c0ff17b7f0b54653bca70546ad9c6d5b757093fdb135c2c128d899022dba9847` |
@@ -45,7 +45,7 @@ Base documentation count, including this manifest: **34**. Table entries below: 
 | Item | Size (bytes) | SHA-256 | Current status |
 |---|---:|---|---|
 | `source/artifacts/windows/HarborlightCourier-windows-x64-complete.zip` | 72,898,920 | `d23bacb4fcc5a069e64a48d0783d09e78d4bf50e6ce6e90fe3d25325ffa5b067` | Local only; excluded from base 34-file count |
-| `source/artifacts/android/HarborlightCourier-arm64.apk` | 96,655,966 | `33e4498e36058e22f38942b64aa6f44e59c582d09156ff7f701b8c0f0e8c735` | Local only; excluded from base 34-file count |
+| `source/artifacts/android/HarborlightCourier-arm64.apk` | 96,655,966 | `33e4498e36058e22f38942b64aa6f44e59c582d09156ff7f701b8c17f0e8c735` | Local only; excluded from base 34-file count |
 
 ## Pending 8MB chunk test set (23 local files, excluded from base count)
 
