@@ -32,4 +32,4 @@
 
 ## 后续公开交接状态（2026-10-27）
 
-上面第 5 条描述的是项目本地验收阶段的范围，后来用户明确授权了指定的公开上传。网页端目前仅实际上传 33 个可接受的交接文件；Windows ZIP 与 Android APK 因网页单文件限制待上传，完整本地包仍保留，未外托管或拆包。目标分支为 `Xbox123z/sfm-recovery` 的 `handoff/harborlight-courier-2026-10-27`、目录 `docs/HarborlightCourier-Handoff/`；默认分支未改，没有 PR 或 Release。公开上传授权不改变 `LICENSE_STATUS.md` 中“项目级许可证未选”的状态，最终远端状态由主代理验证。
+上面第 5 条描述的是项目本地验收阶段的范围，后来用户明确授权了指定的公开上传。网页端旧20MB方案的 Windows 4 片 Commit 明确失败，Android 5 片未尝试。不超过 8,000,000 bytes 的 23片方案（Windows 10、Android 13）仅保留为备用重组目标。Windows part001 单次提交返回 HTTP 400、远端无变更；其余22片未尝试，已停止。本文的重组说明仅供今后取得全部分片后使用；本地重组事实不是远端验证。目标分支为 `Xbox123z/sfm-recovery` 的 `handoff/harborlight-courier-2026-10-27`、目录 `docs/HarborlightCourier-Handoff/`；默认分支未改，没有 PR、Release、Git LFS 或外托管。公开上传授权不改变 `LICENSE_STATUS.md` 中“项目级许可证未选”的状态。

@@ -19,4 +19,4 @@
 
 运行/构建使用 Godot Engine 4.7 Mono、Godot .NET SDK 4.7.0、.NET 8 和本机 Android workload；没有额外游戏插件或 NuGet 依赖。Godot 与随引擎提供的运行模板依其 MIT 许可，.NET 组件依其各自许可；这些第三方许可不决定本项目原创内容的许可状态。界面使用 `ThemeDB.FallbackFont` 中随 Godot 引擎提供的字体，遵循 Godot 发行版第三方声明；本项目没有打包外部字体文件。构建用 JDK/Android SDK 是本机工具，不作为本项目原创内容。
 
-本项目在本地构建与验收完成时未 push、PR、Release、公开上传或分发。2026-10-27 用户明确授权后，网页端仅把 33 个可接受的交接文件上传到 `Xbox123z/sfm-recovery` 的 `handoff/harborlight-courier-2026-10-27` 分支；Windows ZIP 与 Android APK 因网页单文件限制尚未上传，本地包仍保留且未外托管或拆包。没有更改默认分支、创建 PR 或 Release。详见同目录 `PROJECT_HANDOFF.md` 与 `WEB_UPLOAD_STATUS.md`；最终远端状态须另行验证。
+本项目在本地构建与验收完成时未 push、PR、Release、公开上传或分发。2026-10-27 用户明确授权后，网页端向 `Xbox123z/sfm-recovery` 的 `handoff/harborlight-courier-2026-10-27` 分支准备交接；Windows ZIP 与 Android APK 因网页单文件限制切为 4+5 个连续有序分片。Windows 4 片的网页 Commit 明确失败，Android 5 片未尝试上传；因此 旧9片方案与两个裸原始包仍本地保留，远端缺失且未外托管。新8MB方案的23片仅作备用重组目标；Windows part001 单次提交返回 HTTP 400、远端无变更，其余未尝试，按序重组的本地事实不是远端验证。没有更改默认分支、创建 PR 或 Release，也未使用 Git LFS。详见同目录 `PROJECT_HANDOFF.md`、`WEB_UPLOAD_STATUS.md` 与 `REASSEMBLE_ARTIFACTS.md`。

@@ -35,4 +35,4 @@ APK 已检查 ZIP 完整性、`aapt` 包元数据、arm64-v8a 原生 ABI、包�
 
 ## 公开交接补记（2026-10-27）
 
-本报告中“没有公开上传”的描述是本地验收完成时的历史状态。之后用户明确授权本项目的源码、Windows 完整 ZIP、Android APK、交接 Markdown、验收材料与最终验证记录上传到 [`Xbox123z/sfm-recovery`](https://github.com/Xbox123z/sfm-recovery) 的独立分支 `handoff/harborlight-courier-2026-10-27`，目录为 `docs/HarborlightCourier-Handoff/`。网页端目前实际仅上传可接受的 33 个非二进制文件；两个平台包因网页单文件小于 25 MB 的限制尚未上传，本地文件仍保留，未外托管或拆包。未改默认 `main`，未创建 PR 或 Release。上传范围、待上传项和逐文件清单见同目录 `PROJECT_HANDOFF.md`、`WEB_UPLOAD_STATUS.md`、`UPLOAD_MANIFEST.md`；最终远端状态须由主代理查看分支后验证。
+本报告中“没有公开上传”的描述是本地验收完成时的历史状态。之后用户明确授权本项目的源码、Windows 完整 ZIP、Android APK、交接 Markdown、验收材料与最终验证记录上传到 [`Xbox123z/sfm-recovery`](https://github.com/Xbox123z/sfm-recovery) 的独立分支 `handoff/harborlight-courier-2026-10-27`，目录为 `docs/HarborlightCourier-Handoff/`。旧20MB方案的 Windows 4 片网页 Commit 已明确失败，Android 5 片未尝试。8MB 方案共 23 片（Windows 10、Android 13）仅作为备用重组目标。Windows part001 单次提交后返回 HTTP 400，远端无变更；其余22片未尝试，已停止。不能据 HTTP 400 断言 8MB 本身超限，根因未证实。两个裸 ZIP/APK 仍在本地；完整包哈希与新片哈希见 `SHA256SUMS.txt`，本地重组事实不替代远端验证。
