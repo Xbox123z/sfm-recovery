@@ -1,0 +1,25 @@
+GXX_COMPILE_EXIT=0
+PASS: exactly two authored routes
+PASS: ray/rectangle occlusion detects a wall
+PASS: ray/rectangle test leaves clear path unobstructed
+PASS: Pierline Green: parcel count matches route objective
+PASS: Pierline Green: patrol count matches difficulty design
+PASS: Pierline Green: spawn and Dispatch gate are outside collision geometry
+PASS: Pierline Green: Dispatch gate is reachable from spawn
+PASS: Pierline Green: parcel 1 is reachable
+PASS: Pierline Green: parcel 2 is reachable
+PASS: Pierline Green: parcel 3 is reachable
+PASS: Pierline Green: patrol 1 starts outside buildings
+PASS: Glasshouse Arcade: parcel count matches route objective
+PASS: Glasshouse Arcade: patrol count matches difficulty design
+PASS: Glasshouse Arcade: spawn and Dispatch gate are outside collision geometry
+PASS: Glasshouse Arcade: Dispatch gate is reachable from spawn
+PASS: Glasshouse Arcade: parcel 1 is reachable
+PASS: Glasshouse Arcade: parcel 2 is reachable
+PASS: Glasshouse Arcade: parcel 3 is reachable
+PASS: Glasshouse Arcade: parcel 4 is reachable
+PASS: Glasshouse Arcade: patrol 1 starts outside buildings
+PASS: Glasshouse Arcade: patrol 2 starts outside buildings
+ROUTE_DATA_VALIDATION=PASS
+WROTE: /workspace/projects/harborlight-courier/route_data.json
+ROUTE_COMPILER_EXIT=0

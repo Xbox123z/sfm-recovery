@@ -1,0 +1,39 @@
+Godot Engine v4.7.stable.mono.official.5b4e0cb0f - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mdotnet_publish_project[22m | Started Publishing .NET project... (1 steps)[39m[0m
+[   0% ] [90m[1mdotnet_publish_project[22m | Running dotnet publish[39m[0m
+[92m[ DONE ][39m [1mdotnet_publish_project[22m
+[0m
+[   0% ] [90m[1msavepack[22m | Started Packing (102 steps)[39m[0m
+[   1% ] [90m[1msavepack[22m | Storing File: res://CourierGame.cs[39m[0m
+[  17% ] [90m[1msavepack[22m | Storing File: res://CourierSession.cs[39m[0m
+[  33% ] [90m[1msavepack[22m | Storing File: res://.godot/imported/harborlight_icon.svg-8fcb81051d09344e8b154209ecda4ca2.ctex[39m[0m
+[  33% ] [90m[1msavepack[22m | Storing File: res://harborlight_icon.svg.import[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/exported/133200997/export-bcb0d2eb5949c52b6a65bfe9de3e985b-Main.scn[39m[0m
+[  66% ] [90m[1msavepack[22m | Storing File: res://RouteCatalog.cs[39m[0m
+[  82% ] [90m[1msavepack[22m | Storing File: res://route_data.json[39m[0m
+[  82% ] [90m[1msavepack[22m | Storing File: res://Main.tscn.remap[39m[0m
+[  82% ] [90m[1msavepack[22m | Storing File: res://.godot/global_script_class_cache.cfg[39m[0m
+[  82% ] [90m[1msavepack[22m | Storing File: res://harborlight_icon.svg[39m[0m
+[  82% ] [90m[1msavepack[22m | Storing File: res://.godot/uid_cache.bin[39m[0m
+[  82% ] [90m[1msavepack[22m | Storing File: res://project.binary[39m[0m
+[92m[ DONE ][39m [1msavepack[22m
+[0m
+ERROR: EditorSettings not instantiated yet when getting setting "export/android/android_sdk_path".
+   at: _EDITOR_GET (editor/settings/editor_settings.cpp:1656)
+ERROR: EditorSettings not instantiated yet when getting setting "export/android/shutdown_adb_on_exit".
+   at: _EDITOR_GET (editor/settings/editor_settings.cpp:1656)
+
+WINDOWS_FINAL_CLEAN_EXPORT_EXIT=0
+/workspace/projects/harborlight-courier/artifacts/windows/HarborlightCourier.exe: PE32+ executable (GUI) x86-64 (stripped to external PDB), for MS Windows, 12 sections
+size_bytes=109292408
+790cc5c89a0db105cfaf0e2dedf3137199b463bfd76a1fcd6c4c9f2586e3d6f9  /workspace/projects/harborlight-courier/artifacts/windows/HarborlightCourier.exe

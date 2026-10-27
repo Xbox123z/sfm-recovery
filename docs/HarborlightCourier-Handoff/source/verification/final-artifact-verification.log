@@ -1,0 +1,40 @@
+--- Windows x64 EXE ---
+/workspace/projects/harborlight-courier/artifacts/windows/HarborlightCourier.exe: PE32+ executable (GUI) x86-64 (stripped to external PDB), for MS Windows, 12 sections
+/workspace/projects/harborlight-courier/artifacts/windows/HarborlightCourier.exe:     file format pei-x86-64
+architecture: i386:x86-64, flags 0x00000103:
+start address 0x0000000140001470
+size_bytes=109292408
+790cc5c89a0db105cfaf0e2dedf3137199b463bfd76a1fcd6c4c9f2586e3d6f9  /workspace/projects/harborlight-courier/artifacts/windows/HarborlightCourier.exe
+--- Android ARM64 APK ---
+/workspace/projects/harborlight-courier/artifacts/android/HarborlightCourier-arm64.apk: Android package (APK), with gradle app-metadata.properties
+size_bytes=96655966
+33e4498e36058e22f38942b64aa6f44e59c582d09156ff7f701b8c17f0e8c735  /workspace/projects/harborlight-courier/artifacts/android/HarborlightCourier-arm64.apk
+    testing: kotlin/reflect/reflect.kotlin_builtins   OK
+No errors detected in compressed data of /workspace/projects/harborlight-courier/artifacts/android/HarborlightCourier-arm64.apk.
+package: name='org.harborlight.courier' versionCode='1' versionName='1.0.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+sdkVersion:'24'
+targetSdkVersion:'36'
+native-code: 'arm64-v8a'
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+--- key game resources in APK ---
+assets/.godot/mono/publish/arm64/HarborlightCourier.dll
+assets/CourierGame.cs
+assets/route_data.json
+--- source/gameplay tests ---
+C++ route compiler PASS count=21
+C# gameplay smoke PASS count=25
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+FINAL_DOTNET_SOLUTION_BUILD_EXIT=0
+/workspace/projects/harborlight-courier/verification/final-godot-build-solutions.log:FINAL_GODOT_BUILD_SOLUTIONS_EXIT=0
+/workspace/projects/harborlight-courier/verification/final-gameplay-smoke-v3.log:SMOKE_TESTS_PASSED=25
+/workspace/projects/harborlight-courier/verification/final-gameplay-smoke-v3.log:FINAL_GAMEPLAY_SMOKE_EXIT=0
+/workspace/projects/harborlight-courier/verification/final-main-scene-startup-v3.log:FINAL_MAIN_SCENE_EXIT=0

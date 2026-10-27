@@ -1,0 +1,30 @@
+Godot Engine v4.7.stable.mono.official.5b4e0cb0f - https://godotengine.org
+
+PASS: exactly two route definitions
+PASS: easy route is 3 parcels / 1 patrol
+PASS: hard route is 4 parcels / 2 patrols
+PASS: C++-generated route catalog is loaded
+PASS: C# runtime uses generated map geometry
+PASS: generated patrol parameters match both route designs
+PASS: begin easy route
+PASS: reject invalid parcel index
+PASS: first parcel delivered once
+PASS: remaining easy parcels delivered
+PASS: full easy route settles and pays 36
+PASS: quiet soles purchase deducts 35
+PASS: begin hard route
+PASS: hard route records temporary pay
+PASS: full suspicion alone does not trigger failure
+PASS: separate caught event ends the route
+PASS: failure loses only unbanked pay
+PASS: retry hard route after failure
+PASS: all hard-route parcels deliver
+PASS: full hard route settles and pays 68
+PASS: save reload preserves wallet, upgrade and clear flags
+PASS: vision ray intersects a building
+PASS: vision ray outside building stays clear
+PASS: player collision blocks building interior
+PASS: player collision permits open lane
+SMOKE_TESTS_PASSED=25
+
+FINAL_GAMEPLAY_SMOKE_EXIT=0

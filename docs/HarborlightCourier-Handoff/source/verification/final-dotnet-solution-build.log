@@ -1,0 +1,11 @@
+  HarborlightCourier -> /dev/shm/harborlight-stage-v3/.godot/mono/temp/bin/Debug/HarborlightCourier.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.18
+
+Workload updates are available. Run `dotnet workload list` for more information.
+
+FINAL_DOTNET_SOLUTION_BUILD_EXIT=0

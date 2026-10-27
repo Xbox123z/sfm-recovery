@@ -1,0 +1,72 @@
+Godot Engine v4.7.stable.mono.official.5b4e0cb0f - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mdotnet_publish_project[22m | Started Publishing .NET project... (1 steps)[39m[0m
+[   0% ] [90m[1mdotnet_publish_project[22m | Running dotnet publish[39m[0m
+[92m[ DONE ][39m [1mdotnet_publish_project[22m
+[0m
+[   0% ] [90m[1mexport[22m | Started Exporting for Android (105 steps)[39m[0m
+0 param: --xr_mode_regular
+1 param: --xr-mode
+2 param: off
+3 param: --fullscreen
+4 param: --background_color
+5 param: #000000
+[92m[ DONE ][39m [1mexport[22m
+[0m
+ERROR: EditorSettings not instantiated yet when getting setting "export/android/shutdown_adb_on_exit".
+   at: _EDITOR_GET (editor/settings/editor_settings.cpp:1656)
+
+ANDROID_GRADLE_FINAL_EXIT=0
+
+--- APK validation ---
+/workspace/projects/harborlight-courier/artifacts/android/HarborlightCourier-arm64.apk: Android package (APK), with gradle app-metadata.properties
+size_bytes=96655966
+33e4498e36058e22f38942b64aa6f44e59c582d09156ff7f701b8c17f0e8c735  /workspace/projects/harborlight-courier/artifacts/android/HarborlightCourier-arm64.apk
+--- zip integrity ---
+    testing: kotlin/reflect/reflect.kotlin_builtins   OK
+No errors detected in compressed data of /workspace/projects/harborlight-courier/artifacts/android/HarborlightCourier-arm64.apk.
+--- packaged ABIs ---
+lib/arm64-v8a/libSystem.Globalization.Native.so
+lib/arm64-v8a/libSystem.IO.Compression.Native.so
+lib/arm64-v8a/libSystem.Native.so
+lib/arm64-v8a/libSystem.Security.Cryptography.Native.Android.so
+lib/arm64-v8a/libc++_shared.so
+lib/arm64-v8a/libgodot_android.so
+lib/arm64-v8a/libmono-component-debugger.so
+lib/arm64-v8a/libmono-component-diagnostics_tracing.so
+lib/arm64-v8a/libmono-component-hot_reload.so
+lib/arm64-v8a/libmono-component-marshal-ilgen.so
+lib/arm64-v8a/libmonosgen-2.0.so
+--- package SDK metadata ---
+package: name='org.harborlight.courier' versionCode='1' versionName='1.0.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+sdkVersion:'24'
+targetSdkVersion:'36'
+native-code: 'arm64-v8a'
+--- APK signature verification ---
+Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=9 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=9
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Godot, OU=Godot Engine, O=Stichting Godot, C=NL
+Signer #1 certificate SHA-256 digest: 0e6af45f6129d53d65e3a36ff21d7cebf8a2dffd18afdf8a3a4701859bdefc27
+Signer #1 certificate SHA-1 digest: 3839ab74d7276f0109123ba7d7c5094196d72d89
+Signer #1 certificate MD5 digest: 9ed27d120bab866ec62921a6e9f38189
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: a0ccda3dc3a4d03b12b10572c22bd4a86510179db6baf565dd52df50ce45634c
+Signer #1 public key SHA-1 digest: 7a02825c4d7af360a4ad685c4992aac2c898f241
+Signer #1 public key MD5 digest: 39044f6e19bc5ed10c20b02478096872
