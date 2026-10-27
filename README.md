@@ -2,7 +2,7 @@
 
 ## 为什么做这个项目
 
-我不认为 AI 逆向会毁掉独立游戏。恰恰相反，正因为一款游戏足够优秀，才有人愿意花时间和钱继续研究它——光是逆向 SFM，我就已经花了数百美元，够买十几份原作。|
+我不认为 AI 逆向会毁掉独立游戏。恰恰相反，正因为一款游戏足够优秀，才有人愿意花时间和钱继续研究它——光是逆向 SFM，我就已经花了数百美元，够买十几份原作。
 
 成人游戏里，有太多让人意难平的作品：概念惊艳、交互出色，最后却太监了（比如凉花酱，太多数不清）；作者靠赞助就能养活，无限跳票，玩家的期待慢慢耗尽（比如《棘罪修女》；还有成功的作品，因为作者转向全年龄，再也等不到续作比如《塞雷卡2》。作者当然有权选择自己的方向，但玩家也希望这些好点子能继续生长。
 
@@ -27,6 +27,8 @@
 完整解压后双击 **Play.cmd**，无需安装 Unity 编辑器。使用 **Mono 后端**，保留可读的 `Managed/Assembly-CSharp.dll`，未新增混淆、加密或 DRM，方便研究与修改。试玩包包含运行资源，源码仓库仍保持代码与文档快照。
 
 这是现有 `home-street-feedback-v3` 的打包发布，**仍为预览版，完整玩法及最新 UI 回归尚未全部验收**；本次未重新编译，也未重测干净系统首次启动。详见[运行说明](docs/PLAYING.zh-CN.md)。
+
+> 注：上文试玩包与下方演示视频托管在 **KurosawaGeeker** 名下的同名仓库（与当前 Xbox123z 仓库是两个独立仓库，并非账号改名重定向）。经实测，这些 Release 资产只存在于 KurosawaGeeker 名下，因此链接保持原样以确保可用。
 
 ## 游戏演示（局部打码）
 
@@ -76,5 +78,21 @@ Git 源码树不包含模型、贴图、材质、Shader 资源、音频、字体
 ```sh
 python tools/verify-publication.py
 ```
+
+## Harborlight Courier 交接构建（2026-10-27）
+
+除 SFM 逆向主线外，本仓库另发布 **Harborlight Courier** 交接构建 Release：[`handoff-2026-10-27`](https://github.com/Xbox123z/sfm-recovery/releases/tag/handoff-2026-10-27)，附完整包与 SHA-256 校验值：
+
+- Android：`HarborlightCourier-arm64.apk`（约 96.6 MB，**仅 arm64-v8a**，Godot 默认测试证书签名的 debug/test 包）
+- Windows：`HarborlightCourier-windows-x64-complete.zip`（约 72.9 MB，EXE 静态类型 PE32+ GUI x86-64）
+
+**验证边界**：两个包均未在真实设备上完成安装/运行/触控或实机玩法验收（Windows 包未在真实 Windows 机器上测试；Android 包未在真实机器或模拟器上验收）。Harborlight Courier 自有源码与原创素材的项目许可证**尚未由所有者选择**，公开交接不自动授予开源再分发许可，详见 [LICENSE_STATUS](https://github.com/Xbox123z/sfm-recovery/blob/handoff-2026-10-27/docs/HarborlightCourier-Handoff/source/LICENSE_STATUS.md)。
+
+交接文档位于该标签提交（不在 main 分支）：
+
+- [PROJECT_HANDOFF.md · 项目历史与接手指南](https://github.com/Xbox123z/sfm-recovery/blob/handoff-2026-10-27/docs/HarborlightCourier-Handoff/PROJECT_HANDOFF.md)
+- [ACCEPTANCE_REPORT.md · 验收报告与未完成项](https://github.com/Xbox123z/sfm-recovery/blob/handoff-2026-10-27/docs/HarborlightCourier-Handoff/source/ACCEPTANCE_REPORT.md)
+- [PROVENANCE.md · 来源与原创边界](https://github.com/Xbox123z/sfm-recovery/blob/handoff-2026-10-27/docs/HarborlightCourier-Handoff/source/PROVENANCE.md)
+- [THIRD_PARTY_NOTICES.md · 第三方声明](https://github.com/Xbox123z/sfm-recovery/blob/handoff-2026-10-27/docs/HarborlightCourier-Handoff/source/THIRD_PARTY_NOTICES.md)
 
 MIT 许可只覆盖项目贡献者有权授权的原创文档和工具；恢复的游戏代码与第三方组件不因放入本仓库而自动获得 MIT 授权。详见 [许可范围](THIRD_PARTY_NOTICES.md)。
