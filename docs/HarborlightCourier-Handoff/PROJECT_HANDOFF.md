@@ -2,9 +2,9 @@
 
 ## 项目现状
 
-Harborlight Courier 是一款 Godot 4.7 Mono / .NET 8 制作的原创轻量 2D 信使游戏。玩家从 Harborlight Dispatch 据点出发，在街区递送包裹、避开巡逻者，再回到 HQ 门结算。本地完整快照含 Windows x64 ZIP、Android ARM64 APK、源码、验收报告与主要最终验证日志；两个原始包仍在本地。当前改测每片不超过 8,000,000 bytes 的 Windows 10 片、Android 13 片方案，完整包可按 `REASSEMBLE_ARTIFACTS.md` 重组，详见 `WEB_UPLOAD_STATUS.md`。
+Harborlight Courier 是一款 Godot 4.7 Mono / .NET 8 制作的原创轻量 2D 信使游戏。玩家从 Harborlight Dispatch 据点出发，在街区递送包裹、避开巡逻者，再回到 HQ 门结算。项目源码、交接文档与验证资料位于本分支；Windows x64 ZIP 与 Android ARM64 APK 已作为原始附件公开发布在 [handoff-2026-10-27 Release](https://github.com/Xbox123z/sfm-recovery/releases/tag/handoff-2026-10-27)。项目历史、用户提示与可见 AI/Agent 回答摘录见 [`FULL_PROJECT_HISTORY.md`](FULL_PROJECT_HISTORY.md)。
 
-**本地原工程没有 `.git` 目录或提交历史。** 因此本分支提交是把现有项目整理进仓库的一次快照，而非原项目连续的开发提交史。以下项目经过根据现有任务上下文、源码、README、来源说明和验收记录整理；原始聊天中的最初请求全文没有作为文件保存，所以这里不是逐字聊天记录，不会伪造原文。
+**本地原工程没有 `.git` 目录或提交历史。** 因此本分支提交是把现有项目整理进仓库的一次快照，而非原项目连续的开发提交史。以下项目经过根据现有任务上下文、源码、README、来源说明和验收记录整理；原始聊天中的最初请求全文没有作为文件保存，所以这里不是逐字聊天记录，不会伪造原文。可访问筛选回放中的 `role=user` 还可能表示传入的 Agent/工作结果消息，不能单独证明所有者身份；完整历史文档已将来源不能独立确认的条目标为“会话收录消息（来源身份未能独立确认）”，并与可直接核对的用户自然语言要求分开。所收录执行规范也仅作为来源受限的历史输入引文，不是隐藏指令或当前执行要求。
 
 ## 来龙去脉
 
@@ -13,7 +13,7 @@ Harborlight Courier 是一款 Godot 4.7 Mono / .NET 8 制作的原创轻量 2D �
 3. 所有游戏代码、原创地图/角色/包裹/UI、关卡名及图标均重新创作。地图和 UI 由 C# 几何绘制，没有从原仓库或 Quiet Grid 复制代码、游戏素材、对白或关卡设计。来源边界详见 `source/PROVENANCE.md`。
 4. 游戏实现完成后，用 C++ 路线编译器生成并校验两关数据；用 .NET / Godot 构建，执行自动玩法烟测、headless 场景启动以及 Windows/Android 包级校验。严格的通过项与缺项见 `source/ACCEPTANCE_REPORT.md` 和 `source/verification/`。
 5. 原本的本地验收说明要求不要公开上传。项目级 MIT `LICENSE` 后来被移除，改为保留 `LICENSE_STATUS.md`，因为所有者尚未选择项目原创代码/素材的许可证。
-6. **之后用户明确授权这次公开交接**，批准范围是将源码、Windows 完整 ZIP、Android APK、项目历史/交接 Markdown、验收材料和相关验证记录放进 `Xbox123z/sfm-recovery` 的新目录和独立分支。旧 20MB 方案的 Windows 4 片批量 Commit 明确失败，Android 5 片未尝试。现将不超过 8,000,000 bytes 的 23 片方案（Windows 10、Android 13）保留为备用重组目标。Windows part001 单片提交后返回 HTTP 400，远端无变更；按要求已停止，其余 22 片未尝试，不能宣称任何分片成功。当前网页交接仅针对 `handoff/harborlight-courier-2026-10-27` 分支的 `docs/HarborlightCourier-Handoff/` 目录；没有改 `main`，没有创建 PR 或 Release。
+6. **之后用户明确授权这次公开交接**，批准将源码、项目历史/交接 Markdown、验收材料与验证记录上传到 `Xbox123z/sfm-recovery` 的独立分支；其后又批准创建 Release 附件。源码/文档基线提交为 `f5ec9f84e8844acd2ff128f17ab9cd83082be897`。20MB 分片批次被拒；8MB 单片试验的第一片返回 HTTP 400，未成功上传分片。后来两个原始包通过公开 Release 上传并核验。当前交接分支是 `handoff/harborlight-courier-2026-10-27`，`main` 未改、无 PR；Release 标签仍指向基线提交。完整经过见 `FULL_PROJECT_HISTORY.md` 与 `WEB_UPLOAD_STATUS.md`。
 
 ## 游戏玩法与规则
 
@@ -64,7 +64,7 @@ dotnet build HarborlightCourier.sln
 | `source/artifacts/android/HarborlightCourier-arm64.apk`（由 5 片重组） | 96,655,966 bytes | `33e4498e36058e22f38942b64aa6f44e59c582d09156ff7f701b8c17f0e8c735` | 包名 `org.harborlight.courier`，min SDK 24，target/compile SDK 36，仅 `arm64-v8a`。 |
 | Windows ZIP 内的 `HarborlightCourier.exe` | 109,292,408 bytes | `790cc5c89a0db105cfaf0e2dedf3137199b463bfd76a1fcd6c4c9f2586e3d6f9` | PE32+ GUI x86-64。原始 EXE 单文件超过 GitHub 限制，因此随完整 ZIP 交付，不单独上传。 |
 
-Android APK 使用 Godot 默认测试证书签名，不是项目专属生产发布密钥；在本地完整快照中，APK 单独位于 `source/artifacts/android/`，并不包含在 Windows ZIP 中。原始两个包仍在本地；23 个 8MB 分片也仍在本地。远端当前无分片，未来若另获全部分片才可按备用说明重组并核验。
+Android APK 使用 Godot 默认测试证书签名，不是项目专属生产发布密钥；APK 与 Windows ZIP 已通过公开 Release 附件提供，分别与表中大小和 SHA-256 一致。历史 23 个 8MB 分片方案没有成功上传，不是当前交付所必需；Release 提供的是两个原始包。
 
 ## 仍未完成 / 接手时先注意
 
@@ -74,8 +74,11 @@ Android APK 使用 Godot 默认测试证书签名，不是项目专属生产发�
 4. `source/export_presets.cfg` 中 Android 模板路径为原沙盒绝对路径 `/home/ubuntu/.local/share/godot/export_templates/4.7.stable.mono/android_source.zip`，在接手机器通常不可用。原 APK 使用本机 Godot Gradle 模板副本，将模板 NDK 从默认要求的 29.0.14206865 改到本机已有的 28.1.13356709；只改了 `/dev/shm` 临时 staging，不在本包源码中。接手者需要用该机器安装的 Godot build template 和匹配 NDK 调整导出配置，再重新导出并记录环境。
 5. 关键最终验证日志已保存在 `source/verification/`；这里选择的是验收报告所引用的最终记录，不包含缓存目录、临时 build tree、早期试错日志或重复/旧产物。
 
-## 上传清单和排除项
+## 上传清单和发布状态
 
-`UPLOAD_MANIFEST.md` 记录已上传的 28 个 source 文件和 6 个根目录文档，共 34 个文件；23 个 8MB 分片全部待上传，两个原包仅本地保留，整项交付尚未全部完成。没有上传凭据、token、用户私有数据、缓存或临时 build tree。快照 `6528f8a011d41eb6f7b138410f2958586fed9743` 已只读回收并核对 34/34 文件逐字节一致，且仅新增批准的新目录；随后仅补记接手指南、网页状态与清单，最新提交以分支历史为准。默认分支 `main` 及其提交 `b240b61b438300ba4f3adcaae94b7140756949ea` 未变。
-
-没有单独上传 109 MB 的原始 Windows EXE（已包含在完整 ZIP 中）、解压后的 Windows runtime 目录（ZIP 内已有）、旧版 `HarborlightCourier-windows-x64.zip`（缺少后来补入的 README、许可证状态和第三方声明文件），也没有重复上传项目中其他过时产物。平台包使用公共分支普通路径分片，不使用 Git LFS、PR、Release 或默认分支提交。
+- 交接分支：`handoff/harborlight-courier-2026-10-27`。原上传基线提交 `f5ec9f84e8844acd2ff128f17ab9cd83082be897` 包含 34 个源码与交接文件；当前新增的项目历史文档及更新后的交接文档/清单由后续同分支文档提交记录。
+- 本目录的最新文件清单见 [`UPLOAD_MANIFEST.md`](UPLOAD_MANIFEST.md)；项目完整背景与可访问的提示/回答档案见 [`FULL_PROJECT_HISTORY.md`](FULL_PROJECT_HISTORY.md)。
+- Windows 完整 ZIP 与 Android APK 不在普通 Git 路径；它们已上传到公开 [handoff-2026-10-27 Release](https://github.com/Xbox123z/sfm-recovery/releases/tag/handoff-2026-10-27)，大小和 SHA-256 与本指南表格一致。
+- 历史 20MB 分片方案被 GitHub 拒绝；一个 8MB 单片尝试返回 HTTP 400。没有分片成功上传。后来用户批准的 Release 直接附件方案成功，因此本次无需拆包或重组。具体细节见 `WEB_UPLOAD_STATUS.md` 和历史文档。
+- 未上传凭据、token、私有用户数据、缓存或临时 build tree。没有更改 `main`，没有创建 PR；Release 标签仍固定在上述基线提交。
+- 项目级许可证仍未选择；公开交接与附件发布不等于授予源码或原创素材的开源再分发权。
